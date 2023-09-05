@@ -7,6 +7,6 @@ common style(*,btn-primary,section-title,section-description) and header styles
 5. Added Career Section
 6. Added button section
 7. Added Footer section
-8. 
+8. Added Mobile Responsive Devices
 9. 
 10. 

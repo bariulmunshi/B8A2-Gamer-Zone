@@ -1,7 +1,6 @@
 /* common styles */
 * {
   font-family: "Work Sans", sans-serif;
-  /* margin: 0; */
 }
 
 .btn-primary {
@@ -30,6 +29,14 @@
   color: #534c64;
   font-size: 18px;
   font-weight: 400;
+  margin: 20px;
+}
+.banner-1-img,
+.banner-2-img,
+.instant-play-full-image,
+.play-game-full-image,
+.career-image {
+  width: 100%;
 }
 /* header section */
 nav {
@@ -70,7 +77,7 @@ nav ul {
   background: rgba(11, 2, 35, 0.1);
 }
 nav ul li {
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 nav ul li a {
   color: #3c354f;
@@ -87,6 +94,7 @@ nav ul li a {
   justify-content: space-around;
   align-items: center;
 }
+
 .banner-content-1 h3 {
   color: #0b0223;
   font-size: 48px;
@@ -104,8 +112,9 @@ nav ul li a {
   text-transform: uppercase;
   margin: 0px;
 }
+
 /* Banner-2 */
-.gammer {
+.banner-2 {
   background: linear-gradient(
     90deg,
     rgba(255, 66, 165, 0.03) 0%,
@@ -146,7 +155,9 @@ nav ul li a {
   text-align: end;
   /* margin-right: 200px; */
 }
+
 .relative-img1 {
+  width: 50%;
   position: relative;
   right: 155px;
   bottom: 295px;
@@ -164,9 +175,10 @@ nav ul li a {
   gap: 220px;
 }
 .relative-img2 {
+  width: 50%;
   position: relative;
-  bottom: 249px;
-  left: 528px;
+  bottom: 189px;
+  left: 396px;
   border-radius: 8px;
   border: 10px solid #fff;
   background: url(<path-to-image>),
@@ -184,6 +196,7 @@ nav ul li a {
 }
 .career-content {
   padding-left: 240px;
+  width: 100%;
 }
 .career-title {
   color: #fff;
@@ -220,6 +233,9 @@ nav ul li a {
   text-transform: uppercase;
   border: 0px;
   color: #ff42a5;
+}
+.career-img-container {
+  width: 100%;
 }
 /* Button section */
 .btn-section {
@@ -266,7 +282,7 @@ footer {
   height: 40px;
   margin-right: 20px;
 }
-.footer-titles {
+.footer-title-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,25 +292,124 @@ footer {
   font-size: 18px;
   font-weight: 600;
 }
+.footer-sub-container {
+  display: flex;
+  gap: 40px;
+}
 .social-icons {
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.social-icons  i {
+.social-icons i {
   width: 40px;
   height: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.terms-conditions{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    color: #FFFFFF99;
+.terms-conditions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #ffffff99;
 }
-.copy-right{
-    color: #FFFFFF99;
+.copy-right {
+  color: #ffffff99;
+  text-align: center;
+}
+/* Mobile Responsive Devices */
+@media screen and (max-width: 767px) {
+  /* header section */
+  nav,
+  nav ul,
+  .banner-1,
+  .play-instantly,
+  .career,
+  .footer-title-container {
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 10px;
+  }
+  .videos {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  /* Banner-2 */
+  .banner-2,
+  .play-game {
+    flex-direction: column-reverse;
+    padding: 20px 20px 28px 20px;
+  }
+  .gammer-content,
+  .play-instantly-content {
     text-align: center;
+  }
+
+  /* Play Instantly Section */
+  .instant-play-image {
+    width: 100%;
+  }
+  .instant-play-full-image {
+    width: 70%;
+    margin-left: 100px;
+  }
+  .relative-img1 {
+    width: 40%;
+    right: -10px;
+    bottom: 125px;
+  }
+  /* Play Game-Section */
+  .play-game-full-image {
+    width: 70%;
+    margin-right: 100px;
+  }
+  .relative-img2 {
+    width: 40%;
+    bottom: 95px;
+    left: 191px;
+  }
+  /* Career Section */
+  .career-content {
+    padding: 5px;
+  }
+  /* Button section */
+  .btn-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 10px;
+    gap: 10px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #0b0223;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 30px;
+    background: #fff;
+  }
+  .btn > img {
+    width: 40px;
+    height: 40px;
+  }
+  /* Footer section */
+  footer {
+    height: 300px;
+    padding: 50px 5px;
+  }
+
+  .footer-logo h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .footer-logo img {
+    width: 56.041px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
 }
