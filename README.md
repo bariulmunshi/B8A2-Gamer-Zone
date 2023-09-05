@@ -2,7 +2,7 @@
 1. Added CSS stylesheet, FavIcon,title, Font-family, font-awesome icons,
 common style(*,btn-primary,section-title,section-description) and header styles 
 2. Added Funny Videos Section
-3. 
+3. Added Play Instantly Section
 4. 
 5. 
 6. 

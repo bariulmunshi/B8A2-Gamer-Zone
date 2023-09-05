@@ -134,4 +134,25 @@ main {
   gap: 10px;
 }
 
-  
+/* Play Instantly Section */
+.play-instantly {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 220px;
+  margin: 100px 0px;
+}
+.play-instantly-content {
+  text-align: end;
+  /* margin-right: 200px; */
+}
+.relative-img1 {
+  position: relative;
+  right: 155px;
+  bottom: 295px;
+  border-radius: 8px;
+  border: 10px solid #fff;
+  background: url(<path-to-image>),
+    lightgray 0px -0.304px / 100% 117.229% no-repeat;
+}
+
