@@ -6,7 +6,7 @@ common style(*,btn-primary,section-title,section-description) and header styles
 4. Added Play Game-Section
 5. Added Career Section
 6. Added button section
-7. 
+7. Added Footer section
 8. 
 9. 
 10. 
