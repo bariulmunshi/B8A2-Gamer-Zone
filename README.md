@@ -4,7 +4,7 @@ common style(*,btn-primary,section-title,section-description) and header styles
 2. Added Funny Videos Section
 3. Added Play Instantly Section
 4. Added Play Game-Section
-5. 
+5. Added Career Section
 6. 
 7. 
 8. 

@@ -1,6 +1,7 @@
 /* common styles */
 * {
   font-family: "Work Sans", sans-serif;
+  /* margin: 0; */
 }
 
 .btn-primary {
@@ -120,7 +121,7 @@ nav ul li a {
   text-align: end;
 }
 /* main section */
-main {
+.main-section {
   max-width: 1440px;
   margin: 50px auto;
 }
@@ -140,7 +141,6 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 220px;
-  margin: 10px 0px;
 }
 .play-instantly-content {
   text-align: end;
@@ -171,4 +171,53 @@ main {
   border: 10px solid #fff;
   background: url(<path-to-image>),
     lightgray -7.209px 0px / 114.78% 100% no-repeat;
+}
+
+/* Career Section */
+
+.career {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.career-content {
+  padding-left: 240px;
+}
+.career-title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+.career-sub-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.career-details {
+  display: flex;
+  color: #fff;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+#left-text {
+  text-align: start;
+}
+#right-text {
+  text-align: end;
+}
+.career-btn {
+  border-radius: 48px;
+  background: #fff;
+  padding: 21px 40px;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0px;
+  color: #ff42a5;
 }
