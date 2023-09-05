@@ -1,0 +1,122 @@
+/* common styles */
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+.btn-primary {
+  border-radius: 48px;
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+  );
+  padding: 20px 40px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section-title {
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-description {
+  color: #534c64;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* header section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 240px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0%;
+}
+.logo img {
+  width: 86.041px;
+  height: 40px;
+  margin-right: 20px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.fa-brands {
+  width: 33.916px;
+  height: 24px;
+}
+#social-icon {
+    padding: 15px 20px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+}
+nav ul li {
+  padding: 0 20px;
+}
+nav ul li a {
+  color: #3c354f;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+/* Banner-1 */
+.banner-1 {
+  background-image: url("images/Group\ 14.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner-content-1 h3 {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.banner-content-1 h2 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0px;
+}
+/* Banner-2 */
+.gammer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 72px;
+  padding: 20px 230px 128px 230px;
+}
+.gammer-content {
+  text-align: end;
+}
