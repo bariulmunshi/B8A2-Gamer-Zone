@@ -140,7 +140,7 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 220px;
-  margin: 100px 0px;
+  margin: 10px 0px;
 }
 .play-instantly-content {
   text-align: end;
@@ -156,3 +156,19 @@ main {
     lightgray 0px -0.304px / 100% 117.229% no-repeat;
 }
 
+/* Play Game-Section */
+.play-game {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 220px;
+}
+.relative-img2 {
+  position: relative;
+  bottom: 249px;
+  left: 528px;
+  border-radius: 8px;
+  border: 10px solid #fff;
+  background: url(<path-to-image>),
+    lightgray -7.209px 0px / 114.78% 100% no-repeat;
+}
