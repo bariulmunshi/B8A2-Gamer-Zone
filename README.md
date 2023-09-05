@@ -9,4 +9,4 @@ common style(*,btn-primary,section-title,section-description) and header styles
 7. Added Footer section
 8. Added Mobile Responsive Devices
 9. Added Tablet responsive devices 
-10. 
+10. Added Hover Effect with show text and video buttons 

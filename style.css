@@ -143,8 +143,59 @@ nav ul li a {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
-.video >img{
-    width: 100%;
+
+.video > img {
+  width: 100%;
+}
+
+/* Container for the image and text */
+/* Image-container */
+.video {
+  position: relative;
+}
+.video > img:hover {
+  border-radius: 20px;
+  border: 3px solid red;
+  cursor: pointer;
+  filter: brightness(
+    0.5
+  ); /*Darken image on hover: Adjust the brightness value as needed (0.7 darkens the image) */
+}
+/* Style for the "Watch Now" text */
+.video .watch-now-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Background color for the text */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none; /* Hide the text by default */
+}
+/* Style for the video player button */
+.video .video-button {
+  position: absolute;
+  top: 40%; /* Adjust the vertical position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Background color for the button */
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none; /* Hide the button by default */
+}
+/*Show the "Watch Now" text and video player button on hover */
+.video:hover .watch-now-text {
+  display: block;
+}
+.video:hover .video-button {
+  display: block;
 }
 /* Play Instantly Section */
 .play-instantly {
@@ -261,6 +312,11 @@ nav ul li a {
   border-radius: 50px;
   background: #fff;
 }
+.btn:hover {
+  color: #f948b2;
+  border: 1px solid red;
+  cursor: pointer;
+}
 
 /* Footer section */
 footer {
@@ -325,7 +381,9 @@ footer {
   nav,
   nav ul,
   .banner-1,
+  .banner-2,
   .play-instantly,
+  .play-game,
   .career,
   .footer-title-container {
     flex-direction: column;
@@ -337,11 +395,12 @@ footer {
     padding: 20px;
   }
   /* Banner-2 */
-  .banner-2,
+
   .play-game {
     flex-direction: column-reverse;
-    padding: 20px 20px 28px 20px;
-  }
+    padding: 10px 10px ;
+    text-align: center;
+  } 
   .gammer-content,
   .play-instantly-content {
     text-align: center;
@@ -368,7 +427,7 @@ footer {
   .relative-img2 {
     width: 40%;
     bottom: 95px;
-    left: 191px;
+    left: 101px;
   }
   /* Career Section */
   .career-content {
@@ -434,11 +493,11 @@ footer {
   }
   .gammer-content,
   .play-instantly-content {
-    text-align: center; 
+    text-align: center;
   }
-  .video >img{
+  .video > img {
     width: 80%;
-}
+  }
   /* Play Instantly Section */
   .instant-play-image {
     width: 100%;
@@ -479,6 +538,4 @@ footer {
     font-weight: 600;
     border-radius: 40px;
   }
- 
-  
 }
