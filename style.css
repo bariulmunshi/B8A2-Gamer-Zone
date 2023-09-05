@@ -17,17 +17,16 @@
   text-transform: uppercase;
 }
 .section-title {
-  text-align: right;
   font-size: 48px;
   font-weight: 700;
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 0px;
 }
 .section-description {
   color: #534c64;
-  text-align: right;
   font-size: 18px;
   font-weight: 400;
 }
@@ -65,7 +64,7 @@ nav ul {
   height: 24px;
 }
 #social-icon {
-    padding: 15px 20px;
+  padding: 15px 20px;
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
 }
@@ -120,3 +119,19 @@ nav ul li a {
 .gammer-content {
   text-align: end;
 }
+/* main section */
+main {
+  max-width: 1440px;
+  margin: 50px auto;
+}
+/*Online Funny Videos section */
+.funny-videos {
+  text-align: center;
+}
+.videos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+  
